@@ -1,0 +1,26 @@
+@import './../../../../assets/styles/variables.scss';
+.button {
+  background-color: $secondary;
+  height: 5rem;
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: $primary;
+  border-radius: 5rem;
+  margin-right: 0.5rem;
+}
+.icon-text {
+  vertical-align: middle;
+  line-height: normal;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+.mat-icon {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}

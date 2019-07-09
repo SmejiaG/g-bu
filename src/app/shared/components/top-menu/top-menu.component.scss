@@ -1,0 +1,17 @@
+@import './../../../../assets/styles/variables.scss';
+.top-menu {
+  background-color: $primary;
+  color: $font-primary;
+  font-weight: 16;
+  font-size: 2rem;
+  padding: 1%;
+  height: auto;
+  border-radius: 2px solid; 
+  border: 0.5px $border solid;
+  color: $font-primary;
+}
+
+.menu-item{
+    text-align: center;
+    margin-left: 10%;
+}

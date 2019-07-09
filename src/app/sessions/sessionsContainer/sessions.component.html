@@ -1,0 +1,42 @@
+<mat-sidenav-container  class="main-content">
+  <mat-sidenav class="side-nav" opened mode="side">
+    <g-bu-session-card *ngFor="let number of [0,1,2,3,4,5,6,7,8,9]"></g-bu-session-card>
+  </mat-sidenav>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="playerFriendlyName">
+      <div class="header-cell"> <th  mat-header-cell *matHeaderCellDef>PLAYERFRIENDLYNAME</th></div> 
+        <td mat-cell *matCellDef="let element">{{ element.playerFriendlyName }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="playerId">
+        <th mat-header-cell *matHeaderCellDef>S_UID</th>
+        <td mat-cell *matCellDef="let element">{{ element.playerId }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="startTime">
+        <th mat-header-cell *matHeaderCellDef>UTCSTART</th>
+        <td mat-cell *matCellDef="let element">{{ element.startTime }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="endTime">
+        <th mat-header-cell *matHeaderCellDef>UTCENDTIME</th>
+        <td mat-cell *matCellDef="let element">{{ element.endTime }}</td>
+      </ng-container>
+
+      <tr
+        mat-header-row
+        class="table-header"
+        *matHeaderRowDef="displayedColumns"
+      ></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</mat-sidenav-container>

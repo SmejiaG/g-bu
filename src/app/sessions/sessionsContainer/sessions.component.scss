@@ -1,0 +1,31 @@
+@import './../../../assets/styles/variables.scss';
+.side-nav {
+  background-color: $primary;
+  padding: 1%;
+  border: 0.5px $border solid;
+  color: $font-primary;
+}
+.table-container {
+  text-align: center;
+  padding: 1%;
+}
+table {
+  width: 100%;
+}
+.table-header {
+  background-color: $medium-accent;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+.mat-header-cell {
+  text-align: center;
+}
+.header-cell {
+  background-color: aqua !important;
+}
+.main-content {
+  height: 90%;
+  background-color: $primary;
+}
